@@ -1,0 +1,17 @@
+All successful validated emails found for john smith 1975 @gmail.com
+smithj@gmail.com
+smith.j@gmail.com
+john75@gmail.com
+john.75@gmail.com
+johnsmith75@gmail.com
+john.smith.75@gmail.com
+smith75@gmail.com
+smith.75@gmail.com
+jsmith75@gmail.com
+j.smith.75@gmail.com
+johns75@gmail.com
+john.s.75@gmail.com
+smithj75@gmail.com
+smith.j.75@gmail.com
+josm75@gmail.com
+jo.sm.75@gmail.com
