@@ -1,8 +1,31 @@
 import getopt
 import sys
+from os import system, name
 from validate_email import validate_email
 from generate_emails import generate_emails
-    
+
+
+def welcome():
+    print(bcolors.OKGREEN + """  _____                 _ _    ____                                  ___    __     __    _ _     _       _             
+ | ____|_ __ ___   __ _(_) |  / ___|_   _  ___  ___ ___  ___ _ __   ( _ )   \ \   / /_ _| (_) __| | __ _| |_ ___  _ __ 
+ |  _| | '_ ` _ \ / _` | | | | |  _| | | |/ _ \/ __/ __|/ _ \ '__|  / _ \/\  \ \ / / _` | | |/ _` |/ _` | __/ _ \| '__|
+ | |___| | | | | | (_| | | | | |_| | |_| |  __/\__ \__ \  __/ |    | (_>  <   \ V / (_| | | | (_| | (_| | || (_) | |   
+ |_____|_| |_| |_|\__,_|_|_|  \____|\__,_|\___||___/___/\___|_|     \___/\/    \_/ \__,_|_|_|\__,_|\__,_|\__\___/|_|   
+                                                                                                                       
+    Written by Aksel Troan
+    Found at: https://github.com/AkselTroan/Email-guesser-validator
+""" + bcolors.ENDC)
+
+def clear():  # Clearing terminal
+
+    # For Windows
+    if name == 'nt':
+        _ = system('cls')
+
+    # For MacOS and Linux
+    else:
+        _ = system('clear')
+
 
 class bcolors:
     HEADER = '\033[95m'
@@ -50,6 +73,8 @@ def main(argv):
 
 
     emails = generate_emails(firstname, lastname, domain, year)
+    clear() # Clearing the terminal
+    welcome()
 
     for email in emails:
         print("Testing " + email)
