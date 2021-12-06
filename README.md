@@ -1,5 +1,5 @@
 # Email-guesser-validator
-Python 3 script that uses the most common email formats to generate a set of emails and valdiates if the emails exists.
+Python 3 script that uses the most common email formats to generate a set of emails and validates if the emails exists.
 > **_NOTE:_**  Please do not use this tool for any furture illegal activities
 
 
